@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html xmlns="https://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>主页</title>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-141904346-2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-141904346-2');
+    </script>
+    
+    <link rel="stylesheet" type="text/css" href="css/style.css"> 
+</head>
+<body>
+    <div id="content">
+        <br>
+        <div class="search_part">
+            <br /><br /><br /><br /><br /><br /><br /><br /><br />
+            <img src="images/google12345.gif" class="smaller" width="33%"></img>
+            <form id="search_form" class="search_bar" onsubmit="return search()">
+                <input type="submit" id="search_submit" value="☯" >
+                <span>
+                    <i id="clear" onclick="clear_search()"></i>
+                    <div class="si"><input type="text" class="search"value="" onkeyup="get_suggest()" onfocus="get_suggest()" onpaste="get_suggest()" autocomplete="off" id="search_input" placeholder="✎...  偷得浮生半日闲～" ></div>                    
+                </span> 
+                <div id="suggest" style="display: none">
+                    <ul id="suglist"></ul>
+                    <div class="close" onclick="close_sug()">| 收起</div>
+                </div>
+            </form>
+        </div>
+        <br>
+        <!-- 历史 -->
+        <div class="box">
+            <a href="history://"></a>
+            <p><img src="images/history.png" class="icon"></p>
+            <p class="url">足迹</p>
+        </div>
+        <!-- 导航 -->
+        <div class="box">
+            <a href="https://www.moe123.net/sites#"></a>
+            <p><img src="images/guide.png" class="icon"></p>
+            <p class="url">导航</p>
+        </div>
+        <!-- 书签 -->
+        <div class="box">
+            <a href="folder://"></a>
+            <p><img src="images/shuqian.png" class="icon"></p>
+            <p class="url">书签</p>
+        </div>
+        <br>
+        <!-- 小菊花 -->
+        <font color="#303030">
+        <font size="6">―·❀·―</font>
+        <table width="32" border="0"> 
+        <br>
+
+        
+    </div>
+    <br>
+    
+    <!-- 每日一句 -->
+    <script type="text/javascript" src="https://api.lwl12.com/hitokoto/main/get?encode=js&charset=utf-8"></script>
+    <div id="lwlhitokoto">
+	    <script>lwlhitokoto()</script>
+    </div>
+    <div>
+        <div class="lwlhitokoto">
+            <script type="text/javascript" src="https://api.yum6.cn/djt/index.php?encode=js"></script>
+            <span></span>
+               <p><script>binduyan();</script></p>
+        </div>
+    </div>
+
+    <!-- 搜索 -->
+    <script type="text/javascript" src="js/search.js"></script>
+</body>
+</html>
